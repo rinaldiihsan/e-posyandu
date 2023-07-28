@@ -1,0 +1,50 @@
+Warna: linear-gradient(#2C74B3,#02ABD0);
+
+Font: Montserrat
+Warna Font: #fff dan #000000
+
+Header 1 : 
+Ukuran Font: 55px
+Ketebalan: 700
+
+Header 2:
+Ukuran Font: 35px
+Ketebalan: 700
+
+Paragraf:
+Ukuran Font: 26px
+Ketebalan: 600
+
+List Navbar:
+Ukuran Font: 24px
+Ketebalan: 600
+
+Label Input:
+Ukuran Font: 25px
+Ketebalan: 700
+
+Footer:
+Ukuran Font: 20px
+Ketebalan: 700
+
+Button Masuk:
+lebar: 141px
+tinggi: 37px
+
+Button Login:
+Lebar: 284px
+tinggi: 62px
+
+Button Daftar:
+Lebar: 284px
+tinggi: 62px
+
+Button Aksi:
+Lebar: 70px
+tinggi: 27px
+
+Button Tambah Data dan Edit Data':
+Lebar: 365px
+tinggi: 57px
+
+

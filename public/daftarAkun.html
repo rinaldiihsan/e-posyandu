@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Akun</title>
+    <!-- <link rel="stylesheet" href="../src/css/daftarAkun.css" /> -->
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-mont bg-gradient-to-r from-grad-purple to-grad-blue">
+    <h1 class="text-center text-xl tablet:text-3xl text-white font-bold my-4 tablet:my-5 h1">E-Posyandu</h1>
+    <form action="" class="text-center dataForm">
+      <!-- form data diri -->
+      <div class="tablet:ml-96 mx-4 rounded-lg p-4 tablet:p-7 tablet:h-auto bg-white w-auto tablet:w-2/5 dataDiri">
+        <div class="text-left formDataDiri">
+          <h2 class="text-xl font-bold my-1 tablet:my-2">Form Data Diri</h2>
+          <label class="font-semibold" for="name">Masukkan No.KK:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="text" id="No_KK" name="name" required /><br />
+          <label class="font-semibold" for="gambarKK">Masukkan Foto KK:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="file" id="gambarKK" accept="image/*" required /><br />
+          <label class="font-semibold" for="name">Masukkan Nama Ayah:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="text" id="namaAyah" name="name" required /><br />
+          <label class="font-semibold" for="name">Masukkan NIK Ayah:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="text" id="NIKayah" name="name" required /><br />
+          <label class="font-semibold" for="name">Masukkan Nama Ibu:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="text" id="namaIbu" name="name" required /><br />
+          <label class="font-semibold" for="name">Masukkan NIK Ibu:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="text" id="NIKibu" name="name" required /><br />
+          <label class="font-semibold" for="name">Masukkan No.Telp / Whatsapp:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="text" id="NoHP" name="text" required /><br />
+          <label class="font-semibold" for="name">Masukkan Alamat:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="text" id="Alamat" name="name" required /><br />
+        </div>
+      </div>
+      <!-- Akhir dari form data diri -->
+
+      <!-- Form Password -->
+      <div class="tablet:ml-96 mx-4 rounded-lg p-4 tablet:p-7 tablet:h-auto bg-white w-auto tablet:w-2/5 my-2 tablet:my-4 password">
+        <div class="text-left formPassword">
+          <h2 class="text-xl font-bold my-1 tablet:my-2">Daftar Akun</h2>
+          <label class="font-semibold" for="name">Masukkan Password:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="password" id="password" name="password" /><br />
+          <label class="font-semibold" for="name">Masukkan Ulang Password:</label><br />
+          <input class="my-2 rounded-lg border-gray-300 w-full" type="password" id="confirm_password" name="password" /><br />
+        </div>
+        <div class="text-left text-sm font-medium"><input class="check" type="checkbox" onclick="myFunction()" /> Tampilkan Password<br /></div>
+      </div>
+      <!-- Akhir dari form password -->
+      <button class="bg-white hover:bg-gray-300 font-semibold hover:px-14 px-12 py-1 rounded-lg my-3 tablet:my-4" onclick="return validate(),validateSize()">Masuk</button>
+    </form>
+    <!-- footer -->
+    <footer class="mt-4 tablet:mt-6 font-semibold text-white text-center">Copyright E-Posyandu 2022</footer>
+    <!-- akhir footer -->
+    <script>
+      function validateSize() {
+        let gambar = document.getElementById('gambarKK').files[0];
+        let maxSize = 1000000;
+
+        if (gambar.size > maxSize) {
+          alert('Ukuran Gambar Lebih dari 1MB');
+          return false;
+        }
+        return true;
+      }
+
+      function validate() {
+        let password = document.getElementById('password').value;
+        let confirm_password = document.getElementById('confirm_password').value;
+        if (password != confirm_password) {
+          alert('Passwords do not match.');
+          return false;
+        } else if (password == '') {
+          alert('Silahkan isi password');
+          return false;
+        }
+        return true;
+      }
+
+      function myFunction() {
+        let x = document.getElementById('password');
+        let y = document.getElementById('confirm_password');
+        if (x.type && y.type === 'password') {
+          x.type = 'text';
+          y.type = 'text';
+        } else {
+          x.type = 'password';
+          y.type = 'password';
+        }
+      }
+    </script>
+  </body>
+</html>

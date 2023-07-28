@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Posyandu</title>
+    <link rel="stylesheet" href="../src/css/Dashboard.css" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="my-3 text-white">
+      <div class="container flex flex-wrap items-center relative justify-between mx-auto">
+        <a href="HomeLogin.html" class="flex items-center">
+          <img src="../src/img/logo.png" class="h-6" alt="E-Posyandu Logo" />
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button" class="flex items-center text-sm text-white rounded-lg tablet:hidden" aria-controls="navbar-dropdown" aria-expanded="false">
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <div class="absolute mt-56 tablet:mt-0 tablet:relative bg-white tablet:bg-transparent rounded-md hidden w-full tablet:block tablet:w-auto" id="navbar-dropdown">
+          <ul class="flex flex-col p-2 mt-2 tablet:flex-row tablet:space-x-8 tablet:mt-0 tablet:text-sm tablet:font-medium tablet:border-0">
+            <li>
+              <a href="Dashboard.html" class="block py-2 tablet:py-0 pl-3 pr-4 text-slate-700 tablet:text-white text-base tablet:bg-transparenttablet:p-0 tablet:hover:underline tablet:hover:font-bold" aria-current="page">Dashboard</a>
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink0"
+                data-dropdown-toggle="dropdownNavbar0"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-base text-slate-700 tablet:text-white rounded tablet:hover:bg-transparent tablet:border-0 tablet:hover:underline tablet:hover:font-bold tablet:p-0 tablet:w-auto"
+              >
+                Tambah Data
+                <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar0" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="tambahDataAnak.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tambah Data Anak</a>
+                  </li>
+                  <li>
+                    <a href="dataAnak.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tampil Data Anak</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="dataPetugas.html" class="block py-2 pl-3 pr-4 text-slate-700 tablet:text-white text-base tablet:bg-transparent tablet:p-0 tablet:hover:underline tablet:hover:font-bold">Data Petugas</a>
+            </li>
+            <button id="logout-button" class="bg-blue-btn text-white px-6 py-1 rounded-lg hover:bg-grad-purple"><a href="HomeLogin.html">Logout</a></button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Content  -->
+    <div class="mt-8 mx-auto p-3 tablet:flex tablet:items-center tablet:p-8 tablet:mt-10 tablet:mb-14 tablet:mx-24">
+      <div class="tablet:flex-auto tablet:ml-6 tablet:mr-10 tablet:basis-1/2">
+        <h1 class="font-bold text-white mb-3 text-xl tablet:text-5xl tablet:mb-5">E-Posyandu</h1>
+        <p class="text-sm text-justify mb-5 pr-4 tablet:text-base text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        </p>
+      </div>
+      <div class="tablet:flex-auto tablet:basis-2/5">
+        <img src="../src/img/Dokter-Anak.png" alt="" />
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>Copyright E-Posyandu 2022</footer>
+    <!-- footer -->
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../src/js/logout.js"></script>
+  </body>
+</html>

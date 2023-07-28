@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --main-color: linear-gradient(to left, #2c74b3, #02abd0);
+  --black: #101010;
+  --white: #fff;
+  --box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background-color: #205295;
+  color: var(--white);
+}
+
+body {
+  background: var(--main-color);
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.dataForm {
+  margin-left: 31.5%;
+}
+
+.dataDiri {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 500px;
+  min-height: 450px;
+  box-shadow: var(--box-shadow);
+}
+
+.x {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.dataDiri .formDataDiri {
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.dataDiri .formDataDiri label {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.dataDiri .formDataDiri input {
+  min-width: 430px;
+  height: 38px;
+  padding: 13px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.password {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 500px;
+  min-height: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.y {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.password .formPassword {
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.password .formPassword label {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.password .formPassword input {
+  min-width: 430px;
+  height: 38px;
+  padding: 13px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.password .khusus input {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 3rem;
+  margin-left: 17.7%;
+  background: white;
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  transition: width 0.2s, height 0.2s;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  font-weight: 600;
+  background-color: #fff;
+  width: 153px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+footer {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 41.5%;
+  color: var(--white);
+  margin-bottom: 13px;
+  
+}
+
+
